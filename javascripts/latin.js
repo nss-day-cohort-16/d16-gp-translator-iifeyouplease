@@ -1,12 +1,12 @@
 var Translator = (function (oldTranslator) {
 		var latinPhrase = {
-		"get": "tua", 
+		"Get": "tua", 
 		"your": "Braccae", 
 		"fat": "in", 
 		"pants": "ut", 
 		"ready": "adeps", 
 		"it's": "est",
-		"christmas": "Christus"
+		"Christmas": "Christus"
 		};
 		oldTranslator.translateToLatin = function(language) {
 			return latinPhrase[language];

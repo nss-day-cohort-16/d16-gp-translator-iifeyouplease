@@ -3,13 +3,13 @@ var Translator = (function(){
 
 	var phrase = {
 	//value is french	
-	"get": "obtenir", 
+	"Get": "obtenir", 
 	"your": "votre", 
 	"fat": "de", 
 	"pants": "patalon", 
 	"ready": "graisse", 
 	"it's": "sur",
-	"christmas": "noel"
+	"Christmas": "noel"
 
 	};
 

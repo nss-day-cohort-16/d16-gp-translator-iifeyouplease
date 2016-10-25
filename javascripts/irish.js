@@ -3,13 +3,13 @@ var Translator = (function(oldTranslator) {
 
 
 	var irishPhrase = {
-		"get": "fhail", 
+		"Get": "fhail", 
 		"your": "do", 
 		"fat": "saille", 
 		"pants": "pants", 
 		"ready": "ar", 
 		"it's": "se",
-		"christmas": "nollaig"
+		"Christmas": "nollaig"
 	};
 
 	//add property to the object (dot notation)

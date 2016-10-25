@@ -1,7 +1,7 @@
 var Translator = (function(oldTranslator){
 	var spanishPhrase = {
 
-		"get": "conseguir ",
+		"Get": "conseguir ",
 		"your": "sus",
 		"fat": "de grasa",
 		"pants":"pantalones",

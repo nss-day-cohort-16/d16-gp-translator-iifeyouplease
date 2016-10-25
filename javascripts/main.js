@@ -1,7 +1,3 @@
-// Test Irish Phrse 
-irishPhrase = "HEllllllllllloooooooooo"
-
-
 // Event Listners //
 var clear = document.getElementById("clear")
 	.addEventListener("click", reset);
@@ -11,29 +7,38 @@ var translateButton = document.getElementById("translateButton")
 function input (phrase) {
 	var phraseInput = document.getElementById("phraseInput").value;
 		// console.log("Text input=", phraseInput);
-		if (phraseInput === "Get your fat pants ready it's Christmas") {
-			selector(phrase); 
-		} else if (phraseInput === "Get") { //Testing "Get"... DELETE?
-			selector(phrase);
+		if (phraseInput === ("Get your fat pants ready it's Christmas")) {
+			var phraseArray = phraseInput.split(" ");
+			// console.log(typeof phraseArray);
+			selector(phraseArray); 
 		} else {
 			alert("Nah, try again");
 		}
 	} 
 
-function selector(phrase){
+function selector(dM){
 	 var languageSelect = document.getElementById("languageSelect").value;
 	 console.log(languageSelect);
 	 var output = document.getElementById("outputEl");
 
 	 if (languageSelect === "Irish") {
-	 	output.innerHTML = irishPhrase; //translateToIrish
-	 	// console.log("innerHTML TEST", phraseInput.innerHTML);
+	 			for (var i = 0; i < dM.length; i++) {
+	 		output.innerHTML += Translator.translateToIrish(dM[i]) + " ";
+	 		// console.log("innerHTML TEST", phraseInput.innerHTML);
+	 	}
 	 } else if (languageSelect === "German") {
-	 	output.innerHTML = Translator.translateToGerman("Get");
+	 		for (var i = 0; i < dM.length; i++) {
+	 		output.innerHTML += Translator.translateToGerman(dM[i]) + " ";
+	 		// console.log("yo", output.innerHTML);
+	 	}
 	 } else if (languageSelect === "Latin") {
-	 	output.innerHTML = latinPhrase;
+	 			for (var i = 0; i < dM.length; i++) {
+	 		output.innerHTML += Translator.translateToLatin(dM[i]) + " ";
+	 	}
 	 } else if (languageSelect === "Spanish") {
-	 	output.innerHTML = spanishPhrase;
+	 			for (var i = 0; i < dM.length; i++) {
+	 		output.innerHTML += Translator.translateToSpanish(dM[i]) + " ";
+	 	}
 	 }
 }
 

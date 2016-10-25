@@ -17,5 +17,3 @@ var Translator = (function(oldTranslator){
 		
 
 })(Translator);
-
-console.log("Translator", Translator);

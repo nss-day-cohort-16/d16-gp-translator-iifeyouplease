@@ -5,17 +5,25 @@
 	<title>Translator</title>
 </head>
 <body>
-<div id="wrapper">
-<textarea rows="5" cols="50"></textarea>
+	<div id="wrapper">
+		<h3>COPY: Get your fat pants ready it's Christmas</h3>
+		<textarea id="phraseInput" placeholder="Paste or type: Get your fat pants ready it's Christmas" rows="5" cols="50"></textarea><br>
 
-<select>
-	<option value="Irish">Irish</option>
-	<option value="Latin">Latin</option>
-	<option value="German">German</option>
-	<option value="Spanish">Spanish</option>
-</select>
-<button id="translateBtn">Translate</button>
-<div id="outputEl"></div>
+		<select id="languageSelect">
+			<option value="Irish">Irish</option>
+			<option value="Latin">Latin</option>
+			<option value="German">German</option>
+			<option value="Spanish">Spanish</option>
+		</select>
+		<button id="translateButton">Translate</button>
+		<button id="clear">Clear</button>
+	<div id="outputEl"></div>
+	<script type="text/javascript" src="javascripts/translator.js"></script>
+	<script type="text/javascript" src="javascripts/spanish.js"></script>
+	<script type="text/javascript" src="javascripts/latin.js"></script>
+	<script type="text/javascript" src="javascripts/irish.js"></script>
+	<script type="text/javascript" src="javascripts/german.js"></script>
+	<script type="text/javascript" src="javascripts/main.js"></script>
 </div>
 </body>
 </html>
